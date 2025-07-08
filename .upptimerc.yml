@@ -2,7 +2,7 @@
 owner: upptime # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
 #runs-on: self-hosted
-runner: "[self-hosted, linux, X64]"
+runner: "[self-hosted, Linux, X64, default]"
 
 sites:
   - name: Google
