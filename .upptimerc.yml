@@ -1,6 +1,8 @@
 # Change these first
 owner: upptime # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
+#runs-on: self-hosted
+runner: "[self-hosted, linux, X64]"
 
 sites:
   - name: Google
@@ -11,11 +13,10 @@ sites:
     url: https://news.ycombinator.com
   - name: Test Broken Site
     url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: AdGuard
+    url: 10.0.0.20
+    port: 1443
     check: "tcp-ping"
-    ipv6: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
